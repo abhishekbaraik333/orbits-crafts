@@ -60,3 +60,10 @@
   .cards:hover .hover-div {
     opacity: 1;
 }
+
+.background{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .02;
+}
