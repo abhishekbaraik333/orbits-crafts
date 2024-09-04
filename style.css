@@ -1,0 +1,62 @@
+@font-face {
+    font-family: lexend;
+    src: url(./fonts/lexend-deca-latin-400-normal.4c5d8900.woff2);
+}
+
+@font-face {
+    font-family: heading;
+    src: url(./fonts/headingprowide-blackitalic-webfont.woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lexend",sans-serif;
+}
+
+
+.desktop-menu a{
+    color: white;
+}
+
+#hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  #hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  #mobile-nav.active {
+    transform: translateY(0);
+  }
+
+  .hero{
+    background: url(./images/home_banner.jpg) no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .title{
+    font-family: "heading",sans-serif;
+  }
+
+  .cards{
+    transition: all 0.1s ease;
+  }
+
+  .logos{
+    transition: all 100ms ease;
+  }
+
+  .cards:hover .logos{
+    transform: translateY(-50px);
+  }
+
+  .cards:hover .hover-div {
+    opacity: 1;
+}
